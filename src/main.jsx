@@ -5,11 +5,14 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { CountProvider } from "./context";
 createRoot(document.getElementById('root')).render(
-<BrowserRouter> <StrictMode>
+
+ <BrowserRouter>
+   <StrictMode>
 <CountProvider>
         <App />
          </CountProvider>
-  </StrictMode></BrowserRouter>
+  </StrictMode>
+  </BrowserRouter>
  
 
   

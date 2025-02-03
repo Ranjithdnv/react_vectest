@@ -2,7 +2,7 @@ import { useState , useContext ,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter, Route , Routes} from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route , Router, Routes} from 'react-router-dom'
 import Homepage from './pages/homepage'
 import Login from './pages/login/login'
 import { CountContext } from './context'
@@ -34,13 +34,15 @@ function App() {
     
      <div>
       jjjjjjjjjj
-      <Routes>
+    {/* <HashRouter> */}
+    <Routes>
         <Route> 
        
      <Route path="/home"      element={c.username_dress ? <Homepage /> : <Navigate to="/login" />} /> 
      <Route path="/login" element={<Login />} /> 
          </Route>
       </Routes>
+    {/* </HashRouter> */}
 
      </div>
       
