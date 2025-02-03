@@ -27,6 +27,7 @@ function App() {
 
   console.log('uuuuuuuuuuuu')
   console.log(c.username_dress)
+  console.log('git')
 
   return (
     <>

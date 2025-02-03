@@ -5,4 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/', // Ensures correct path resolution
+  server: {
+    historyApiFallback: true, // Handles deep links in local development
+  },
+
 })
