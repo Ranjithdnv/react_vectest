@@ -1,0 +1,9 @@
+/* In your global CSS file (e.g., index.css) */
+body {
+    background: linear-gradient(to bottom right, skyblue, lightpink);
+    min-height: 100vh;
+    margin: 0; /* Optional: Remove default margin */
+    color: white; /* Optional: Set text color to white for better readability */
+    
+  }
+  
