@@ -6,6 +6,11 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/', // Ensures correct path resolution
+  build: {
+    rollupOptions: {
+      input: 'index.html',
+    },
+  },
   server: {
     historyApiFallback: true, // Handles deep links in local development
   },
