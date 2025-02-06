@@ -1,0 +1,12 @@
+#off-canvas {
+  transform: translateX(-100%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Show off-canvas when checkbox is checked */
+#hamburger-toggle:checked ~ #off-canvas {
+  transform: translateX(0); /* Slide the menu in */
+  visibility: visible; /* Ensure it's visible */
+  opacity: 1; /* Smooth fade-in */
+}
